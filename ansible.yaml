@@ -1,0 +1,12 @@
+---
+- name: Create folder
+  hosts: localhost
+  # gather_facts: no
+  tasks:
+    - name: Create folder
+      file: 
+        path: ~/prabha/repos/hello
+        state: directory
+        mode: "0775"
+
+   
